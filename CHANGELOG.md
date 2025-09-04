@@ -6,10 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased 
 
-## [1.0.0] – 2025-09-01
-
+## [1.0.0] - 2025-09-01
 ### Added
-– ECWF Sync GEOJson
-– Geolocation
-– OpenWeatherMap
-– AI mode
+- ECWF Sync GEOJson
+- Geolocation
+- OpenWeatherMap
