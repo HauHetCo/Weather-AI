@@ -28,7 +28,7 @@ In short: An independant JavaScript library for including OWM's layers and OWM's
 
 ## Sources of data and Thanks❤️
 
-*   Real-time earthquake data from [OpenWeather](https://openweathermap.org/)  
+*   Real-time Weather data from [OpenWeather](https://openweathermap.org/)  
 *   Maps used from [Mapbox](https://www.mapbox.com/) and [CartoDB](https://carto.com/)
 *   World tectonic plates and boundaries from [fraxen](https://github.com/fraxen/tectonicplates)
 *   Exterior design from [Mudi.ui](https://www.mdui.org/)
