@@ -356,6 +356,18 @@
                             gradient: [this.params.scales.CLOUDS_STYLE],
                             legend: ["Clouds"]
                         }
+			        }), this.layers.accumulated = new L.tileLayer("//{s}.sat.owm.io/vane/2.0/weather/PAR0/{z}/{x}/{y}?appid=" + this.params.appidWeatherLayer, {
+                        name: "accumulated",
+                        attribution: this.attribution,
+                        maxZoom: 18,
+                        zIndex: 1,
+                        scaleParams: {
+                            linearScale: !0,
+                            width: "300px",
+                            siText: "mm",
+                            gradient: [this.params.scales.ACCU_STYLE],
+                            legend: ["Accumulated Rain"]
+                        }
                     }), this.layers.radar = new L.tileLayer("//{s}.sat.owm.io/maps/2.0/radar/{z}/{x}/{y}?appid=" + this.params.appidWeatherLayer + "&day=" + this.getUTCDateTime(), {
                         name: "radar",
                         attribution: this.attribution,
@@ -547,7 +559,32 @@
                 value: 100,
                 color: "rgba(183, 183, 183, 1)"
             }],
-            PRECIPITATION_STYLE: [{
+            ACCU_STYLE: [{
+                value: 0,
+                color: "rgba(0,255,0, 0)"
+            }, {
+                value: 1,
+                color: "rgba(0,255,0, 0.2)"
+            }, {
+                value: 3,
+                color: "rgba(0,232,46, 0.6)"
+            }, {
+                value: 14,
+                color: "rgba(0,202,145, 0.8)"
+            }, {
+                value: 19,
+                color: "rgba(0,170,208, 0.9)"
+            }, {
+                value: 49,
+                color: "rgba(0,156,229, 1)"
+            }, {
+                value: 100,
+                color: "rgba(14,64,134, 1)"
+            }, {
+                value: 200,
+                color: "rgba(13,113,252, 1)"
+            }],
+		    PRECIPITATION_STYLE: [{
                 value: 0,
                 color: "rgba(172,170,247, 0)"
             }, {
@@ -1000,7 +1037,7 @@
                             w = {};
                             for (var n = 0; n <= 10 && !(i >= M);) w[i.getTime()] = c(i, v.options), i.setMinutes(i.getMinutes() + C), n++;
                             x.setMinutes(x.getMinutes() - C);
-                            var a = ["temperature", "pressure", "windspeed", "snow", "clouds"].includes(g) ? 2e3 : 800;
+                            var a = ["temperature", "pressure", "windspeed", "snow", "clouds", "accumulated"].includes(g) ? 2e3 : 800;
                             P = setInterval(function() {
                                 if (x >= M) return void m();
                                 i < M && Object.keys(t._layers).length < 10 && (w[i.getTime()] = c(i), i.setMinutes(i.getMinutes() + C)), s(C, 120)
@@ -1540,6 +1577,7 @@
                                 Pressure: this.layers.pressure,
                                 Temperature: this.layers.temperature,
 								Snow: this.layers.snow,
+								"Accumulated Rain": this.layers.accumulated,
 
                                 "Wind speed": this.layers.windspeed,
                                 Clouds: this.layers.clouds,
