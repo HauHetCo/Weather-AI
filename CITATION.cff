@@ -6,8 +6,8 @@ authors:
   given-names: "Giannopulos"
   email: "hello@hauhet.co"
 title: "Weather-AI"
-version: 1.0.0
+version: 1.2
 doi: 10.5281/zenodo.1234
-date-released: 2025-09-07
+date-released: 2025-12-28
 url: "https://github.com/HauHetCo/Weather-AI"
 license: GNU General Public License v3.0
