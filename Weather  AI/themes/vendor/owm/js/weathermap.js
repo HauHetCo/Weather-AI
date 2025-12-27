@@ -635,25 +635,25 @@
                 value: 0,
                 color: "rgba(0,255,0, 0)"
             }, {
-                value: 1,
+                value: 10,
                 color: "rgba(0,255,0, 0.2)"
             }, {
-                value: 3,
+                value: 20,
                 color: "rgba(0,232,46, 0.6)"
             }, {
-                value: 14,
+                value: 50,
                 color: "rgba(0,202,145, 0.8)"
             }, {
-                value: 19,
+                value: 80,
                 color: "rgba(0,170,208, 0.9)"
             }, {
-                value: 49,
+                value: 150,
                 color: "rgba(0,156,229, 1)"
             }, {
-                value: 100,
+                value: 200,
                 color: "rgba(14,64,134, 1)"
             }, {
-                value: 200,
+                value: 300,
                 color: "rgba(13,113,252, 1)"
             }],
             SNOW_STYLE: [{
@@ -661,25 +661,25 @@
                 color: "rgba(0,255,0, 0)"
             }, {
                 value: 10,
-                color: "rgba(0,255,0, 0.2)"
+                color: "rgba(170,231,239, 0.2)"
             }, {
                 value: 30,
-                color: "rgba(0,232,46, 0.6)"
+                color: "rgba(81,215,235, 0.6)"
             }, {
                 value: 50,
-                color: "rgba(0,202,145, 0.8)"
+                color: "rgba(130,89,110, 0.8)"
             }, {
                 value: 70,
-                color: "rgba(0,170,208, 0.9)"
+                color: "rgba(138,138,215, 0.9)"
             }, {
                 value: 100,
-                color: "rgba(0,156,229, 1)"
+                color: "rgba(138,138,215, 1)"
             }, {
                 value: 150,
-                color: "rgba(14,64,134, 1)"
+                color: "rgba(210,53,142, 1)"
             }, {
                 value: 200,
-                color: "rgba(13,113,252, 1)"
+                color: "rgba(73,69,210, 1)"
             }],
             WINDSPEED_STYLE: [{
                 value: 0,
