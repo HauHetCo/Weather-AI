@@ -43,4 +43,4 @@ In short: An independant JavaScript library for including OWM's layers and OWM's
 
 ### Copyright
 
-HauHet plc. © 2023-2025. All Rights Reserved. [HauHet plc.](https://hauhet.co/)
+HauHet plc. © 2023-2026. All Rights Reserved. [HauHet plc.](https://hauhet.co/)
