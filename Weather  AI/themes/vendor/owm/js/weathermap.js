@@ -317,7 +317,7 @@
                         }
 						
 						
-					}), this.layers.snow = new L.tileLayer("//{s}.sat.owm.io/vane/2.0/weather/PAS0/{z}/{x}/{y}?appid=" + this.params.appidWeatherLayer + "&fill_bound=true", {
+					}), this.layers.snow = new L.tileLayer("//{s}.sat.owm.io/vane/2.0/weather/SD0/{z}/{x}/{y}?appid=" + this.params.appidWeatherLayer + "&fill_bound=true", {
                         name: "snow",
                         attribution: this.attribution,
                         maxZoom: 18,
@@ -326,9 +326,9 @@
                         scaleParams: {
                             linearScale: !0,
                             width: "300px",
-                            siText: "mm",
+                            siText: "cm",
                             gradient: [this.params.scales.SNOW_STYLE],
-                            legend: ["Snow"]
+                            legend: ["Snow Depth"]
                         }
 
 						
@@ -658,25 +658,28 @@
             }],
             SNOW_STYLE: [{
                 value: 0,
-                color: "rgba(2,255,137, 0)"
+                color: "rgba(0,255,0, 0)"
             }, {
-                value: 1,
-                color: "rgba(2,255,137, 0.3)"
+                value: 10,
+                color: "rgba(0,255,0, 0.2)"
             }, {
-                value: 5,
-                color: "rgba(12,197,119, 0.7)"
+                value: 30,
+                color: "rgba(0,232,46, 0.6)"
             }, {
-                value: 20,
-                color: "rgba(22,139,101, 0.8)"
+                value: 50,
+                color: "rgba(0,202,145, 0.8)"
             }, {
-                value: 40,
-                color: "rgba(81,82,255, 0.9)"
+                value: 70,
+                color: "rgba(0,170,208, 0.9)"
             }, {
                 value: 100,
-                color: "rgba(84,47,130, 1)"
+                color: "rgba(0,156,229, 1)"
+            }, {
+                value: 150,
+                color: "rgba(14,64,134, 1)"
             }, {
                 value: 200,
-                color: "rgba(84,47,130, 1)"
+                color: "rgba(13,113,252, 1)"
             }],
             WINDSPEED_STYLE: [{
                 value: 0,
@@ -1576,7 +1579,7 @@
                         var r = {
                                 Pressure: this.layers.pressure,
                                 Temperature: this.layers.temperature,
-								Snow: this.layers.snow,
+								"Snow Depth": this.layers.snow,
 								"Accumulated Rain": this.layers.accumulated,
 
                                 "Wind speed": this.layers.windspeed,
