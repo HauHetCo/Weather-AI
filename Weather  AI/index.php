@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T9Z73XKQ');</script>
 <!-- End Google Tag Manager -->
 
-    <title>Interactive Weather AI :: V. 1.1</title>
+    <title>Interactive Weather AI :: V. 1.2</title>
     
       <!-- Meta description, aim for about 150 characters-->
   <meta http-equiv='content-language' content='en-gb'>
@@ -113,7 +113,7 @@ clouds overlays, featuring detailed city information. Customize your view with v
 
 <body class="body-orange">
    
-    <div class="nav-styles"></div>
+<div class="nav-styles"></div>
     <main class="wrapper">
         <link href='themes/vendor/owm/css/weathermap.css' rel="stylesheet">
 
